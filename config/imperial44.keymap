@@ -5,6 +5,55 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        sqt {
+            bindings = <&kt SQT>;
+            key-positions = <22 21>;
+        };
+
+        right-parenthesis {
+            bindings = <&kt RIGHT_PARENTHESIS>;
+            key-positions = <19 20>;
+        };
+
+        left-parenthesis {
+            bindings = <&kt LEFT_PARENTHESIS>;
+            key-positions = <16 15>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <20 21>;
+        };
+
+        minus {
+            bindings = <&kt MINUS>;
+            key-positions = <14 15>;
+        };
+
+        right-brace {
+            bindings = <&kt RIGHT_BRACE>;
+            key-positions = <33 34>;
+        };
+
+        left-brace {
+            bindings = <&kt LEFT_BRACE>;
+            key-positions = <27 28>;
+        };
+
+        asterisk {
+            bindings = <&kt ASTRK>;
+            key-positions = <2 3>;
+        };
+
+        ampersand {
+            bindings = <&kt AMPS>;
+            key-positions = <3 4>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -17,16 +66,13 @@
             >;
 
             display-name = "Base";
-            sensor-bindings =
-                <&inc_dec_kp RIGHT LEFT>,
-                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         nav {
             bindings = <
 &trans  &kp N1     &kp N2     &kp N3      &kp N4     &kp N5                             &kp N6        &kp N7        &kp N8     &kp N9     &kp N0         &trans
 &trans  &kp HOME   &kp INS    &kp DELETE  &kp END    &kp LG(SPACE)                      &trans        &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &trans
-&trans  &kp LG(Z)  &kp LC(X)  &kp LG(C)   &kp LG(V)  &kp PRINTSCREEN  &trans    &trans  &kp CAPSLOCK  &kp LA(LEFT)  &kp PG_DN  &kp PG_UP  &kp LA(RIGHT)  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)  &kp PRINTSCREEN  &trans    &trans  &kp CAPSLOCK  &kp LA(LEFT)  &kp PG_DN  &kp PG_UP  &kp LA(RIGHT)  &trans
                                           &trans     &trans           &trans    &trans  &mo 3         &trans
             >;
 
