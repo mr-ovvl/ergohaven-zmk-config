@@ -9,17 +9,17 @@
         compatible = "zmk,combos";
 
         sqt {
-            bindings = <&kt SQT>;
+            bindings = <&kp SQT>;
             key-positions = <22 21>;
         };
 
         right-parenthesis {
-            bindings = <&kt RIGHT_PARENTHESIS>;
+            bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <19 20>;
         };
 
         left-parenthesis {
-            bindings = <&kt LEFT_PARENTHESIS>;
+            bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 15>;
         };
 
@@ -29,28 +29,33 @@
         };
 
         minus {
-            bindings = <&kt MINUS>;
+            bindings = <&kp MINUS>;
             key-positions = <14 15>;
         };
 
         right-brace {
-            bindings = <&kt RIGHT_BRACE>;
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <33 34>;
         };
 
         left-brace {
-            bindings = <&kt LEFT_BRACE>;
+            bindings = <&kp LEFT_BRACE>;
             key-positions = <27 28>;
         };
 
         asterisk {
-            bindings = <&kt ASTRK>;
+            bindings = <&kp ASTRK>;
             key-positions = <2 3>;
         };
 
         ampersand {
-            bindings = <&kt AMPS>;
+            bindings = <&kp AMPS>;
             key-positions = <3 4>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCL>;
+            key-positions = <26 27>;
         };
     };
 
