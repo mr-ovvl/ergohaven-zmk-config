@@ -64,6 +64,16 @@
             bindings = <&kp EXCL>;
             key-positions = <26 27>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <7 8>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <8 9>;
+        };
     };
 
     behaviors {
