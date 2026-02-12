@@ -188,7 +188,7 @@
 
         sym {
             bindings = <
-&trans  &kp GRAVE                    &kp MINUS               &kp COLON                   &kp EQUAL                 &kp NUBS                        &kp CARET     &kp LEFT_BRACKET           &kp RIGHT_BRACKET   &kp TILDE           &kp SEMI              &trans
+&trans  &kp GRAVE                    &kp MINUS               &kp COLON                   &kp EQUAL                 &kp BSLH                        &kp CARET     &kp LEFT_BRACKET           &kp RIGHT_BRACKET   &kp TILDE           &kp SEMI              &trans
 &trans  &hrmp LEFT_CONTROL NUMBER_1  &hrm LEFT_ALT NUMBER_2  &hrm LEFT_COMMAND NUMBER_3  &hrm LEFT_SHIFT NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6  &hrm RIGHT_SHIFT NUMBER_7  &hrm RGUI NUMBER_8  &hrm LALT NUMBER_9  &hrmp RCTRL NUMBER_0  &trans
 &trans  &kp EXCL                     &kp AT                  &kp HASH                    &kp DOLLAR                &kp PERCENT   &trans    &trans  &kp CARET     &kp AMPERSAND              &kp ASTERISK        &kp TILDE           &kp FSLH              &to 6
                                                                                          &trans                    &mo 3         &trans    &trans  &trans        &trans
