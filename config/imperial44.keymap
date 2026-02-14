@@ -217,7 +217,7 @@
 &kp ESC    &kp Q                 &kp W            &kp E                &kp R              &kp T                            &kp Y      &kp U               &kp I                 &kp O        &kp P                     &kp DELETE
 &kp TAB    &hrmp LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_COMMAND D  &hml LEFT_SHIFT F  &kp G                            &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_COMMAND K  &hmr LALT L  &hrmp RIGHT_CONTROL SEMI  &kp BACKSPACE
 &kp LSHFT  &kp Z                 &kp X            &kp C                &kp V              &kp B  &kp LBKT       &kp RBKT   &kp N      &kp M               &kp COMMA             &kp DOT      &kp SINGLE_QUOTE          &kp RSHFT
-                                                                       &kp LGUI           &tdmo  &lt 4 SPACE    &kp ENTER  &more 2 0  &kp LALT
+                                                                       &kp LGUI           &tdmo  &lt 5 SPACE    &kp ENTER  &more 2 0  &kp LALT
             >;
 
             display-name = "Base";
@@ -227,7 +227,7 @@
             bindings = <
 &trans  &kp LG(TAB)       &kp LS(F11)   &kp F11       &kp F10         &kp F9                                              &kp ESC             &kp TAB                    &kp K_UNDO             &kp DELETE    &kp BACKSPACE           &trans
 &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp F12                                             &kp LA(LEFT_ARROW)  &hmr RIGHT_GUI LEFT_ARROW  &hmr RIGHT_SHIFT DOWN  &hmr LALT UP  &hmr RCTRL RIGHT_ARROW  &kp LA(RIGHT_ARROW)
-&trans  &kp LG(Z)         &kp LG(X)     &kp LG(C)     &kp LG(V)       &kp LG(SPACE)  &kp LA(BACKSPACE)    &kp LA(DELETE)  &kp INSERT          &kp HOME                   &kp PG_DN              &kp PG_UP     &kp END                 &to 5
+&trans  &kp LG(Z)         &kp LG(X)     &kp LG(C)     &kp LG(V)       &kp LG(SPACE)  &kp LA(BACKSPACE)    &kp LA(DELETE)  &kp INSERT          &kp HOME                   &kp PG_DN              &kp PG_UP     &kp END                 &to 6
                                                       &trans          &trans         &trans               &trans          &mo 3               &trans
             >;
 
@@ -238,7 +238,7 @@
             bindings = <
 &trans  &kp NUMBER_1              &kp NUMBER_2        &kp NUMBER_3                 &kp NUMBER_4                  &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7            &kp NUMBER_8     &kp NUMBER_9           &kp NUMBER_0       &trans
 &trans  &hrmp LEFT_CONTROL GRAVE  &hrm LEFT_ALT PIPE  &hrm LEFT_COMMAND LESS_THAN  &hrm LEFT_SHIFT GREATER_THAN  &kp TILDE                       &kp UNDER     &hrm RIGHT_SHIFT EQUAL  &hrm RGUI COLON  &hrm LALT EXCLAMATION  &hrmp RCTRL MINUS  &trans
-&trans  &kp EXCL                  &kp AT              &kp HASH                     &kp DOLLAR                    &kp PERCENT   &trans    &trans  &kp CARET     &kp AMPERSAND           &kp ASTERISK     &kp SLASH              &kp QMARK          &to 5
+&trans  &kp EXCL                  &kp AT              &kp HASH                     &kp DOLLAR                    &kp PERCENT   &trans    &trans  &kp CARET     &kp AMPERSAND           &kp ASTERISK     &kp SLASH              &kp QMARK          &to 6
                                                                                    &trans                        &mo 3         &trans    &trans  &trans        &trans
             >;
 
@@ -256,6 +256,15 @@
             display-name = "Adjust";
         };
 
+        num-debug {
+            bindings = <
+&trans  &kp N1     &kp N2       &kp N3    &kp N4     &kp N5                    &kp N6  &kp N7     &kp N8    &kp N9    &kp N0     &trans
+&trans  &kp LCTRL  &kp LALT     &kp LGUI  &kp LSHFT  &trans                    &trans  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &trans
+&trans  &kp F5     &kp LS(F11)  &kp F11   &kp F10    &kp F9  &trans    &trans  &trans  &trans     &trans    &trans    &trans     &trans
+                                          &trans     &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
         mouse-nav {
             bindings = <
 &trans  &mkp MCLK       &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans                    &mkp MB4      &mkp LCLK       &mkp MCLK       &mkp RCLK     &mkp MB5         &trans
@@ -267,10 +276,10 @@
 
         gaming-main {
             bindings = <
-&kp ESC  &kp T      &kp Q  &kp W  &kp E  &kp R                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB  &kp LSHFT  &kp A  &kp S  &kp D  &kp F                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp I    &kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B        &trans  &trans  &trans  &trans  &trans  &trans  &to 0
-                                  &kp G  &mo 6  &kp SPACE    &trans  &trans  &trans
+&kp ESC  &kp T      &kp Q  &kp W  &kp E  &kp R                       &trans        &trans          &kp UP          &trans           &trans        &to 0
+&kp TAB  &kp LSHFT  &kp A  &kp S  &kp D  &kp F                       &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &kp RIGHT_SHIFT
+&kp I    &kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B        &trans  &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0  &kp LCTRL
+                                  &kp G  &mo 7  &kp SPACE    &trans  &trans        &trans
             >;
         };
 
@@ -280,15 +289,6 @@
 &trans  &trans  &trans  &trans  &trans  &kp N0                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &kp N1     &kp N2       &kp N3    &kp N4     &kp N5                    &kp N6  &kp N7     &kp N8    &kp N9    &kp N0     &trans
-&trans  &kp LCTRL  &kp LALT     &kp LGUI  &kp LSHFT  &trans                    &trans  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &trans
-&trans  &kp F5     &kp LS(F11)  &kp F11   &kp F10    &kp F9  &trans    &trans  &trans  &trans     &trans    &trans    &trans     &trans
-                                          &trans     &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
