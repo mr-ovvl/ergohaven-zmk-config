@@ -236,7 +236,7 @@
             bindings = <
 &kp ESC    &kp Q                 &kp W            &kp E                &kp R              &kp T                                &kp Y      &kp U               &kp I                 &kp O        &kp P                     &kp DELETE
 &kp TAB    &hrmp LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_COMMAND D  &hml LEFT_SHIFT F  &kp G                                &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_COMMAND K  &hmr LALT L  &hrmp RIGHT_CONTROL SEMI  &kp BACKSPACE
-&kp LSHFT  &kp Z                 &kp X            &kp C                &kp V              &kp B      &kp LBKT       &kp RBKT   &kp N      &kp M               &kp COMMA             &kp DOT      &kp QUESTION              &kp RSHFT
+&kp LSHFT  &kp Z                 &kp X            &kp C                &kp V              &kp B      &kp LBKT       &kp RBKT   &kp N      &kp M               &kp COMMA             &kp DOT      &kp SLASH                 &kp RSHFT
                                                                        &kp TAB            &tdmo_1_4  &lt 5 SPACE    &kp ENTER  &tdmo_2_6  &kp BACKSPACE
             >;
 
@@ -256,9 +256,9 @@
 
         num-sym {
             bindings = <
-&trans  &kp NUMBER_1              &kp NUMBER_2        &kp NUMBER_3                 &kp NUMBER_4                  &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7            &kp NUMBER_8     &kp NUMBER_9           &kp NUMBER_0              &trans
-&trans  &hrmp LEFT_CONTROL GRAVE  &hrm LEFT_ALT PIPE  &hrm LEFT_COMMAND LESS_THAN  &hrm LEFT_SHIFT GREATER_THAN  &kp TILDE                       &kp UNDER     &hrm RIGHT_SHIFT EQUAL  &hrm RGUI COLON  &hrm LALT EXCLAMATION  &hrmp RCTRL SINGLE_QUOTE  &trans
-&trans  &kp EXCL                  &kp AT              &kp HASH                     &kp DOLLAR                    &kp PERCENT   &trans    &trans  &kp CARET     &kp AMPERSAND           &kp ASTERISK     &kp SLASH              &kp MINUS                 &to 7
+&trans  &kp NUMBER_1              &kp NUMBER_2        &kp NUMBER_3                 &kp NUMBER_4                  &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7            &kp NUMBER_8     &kp NUMBER_9             &kp NUMBER_0              &trans
+&trans  &hrmp LEFT_CONTROL GRAVE  &hrm LEFT_ALT PIPE  &hrm LEFT_COMMAND LESS_THAN  &hrm LEFT_SHIFT GREATER_THAN  &kp TILDE                       &kp UNDER     &hrm RIGHT_SHIFT EQUAL  &hrm RGUI COLON  &hrm LALT DOUBLE_QUOTES  &hrmp RCTRL SINGLE_QUOTE  &trans
+&trans  &kp EXCL                  &kp AT              &kp HASH                     &kp DOLLAR                    &kp PERCENT   &trans    &trans  &kp CARET     &kp AMPERSAND           &kp ASTERISK     &kp PLUS                 &kp MINUS                 &to 7
                                                                                    &trans                        &mo 3         &trans    &trans  &trans        &trans
             >;
 
