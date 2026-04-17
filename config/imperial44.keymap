@@ -216,7 +216,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "Tap Dance Layer Change Sym & Media";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&to 6>;
+            bindings = <&mo 2>, <&mo 6>;
         };
     };
 
