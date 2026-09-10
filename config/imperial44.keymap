@@ -140,6 +140,11 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <25 26>;
         };
+
+        Underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <30 31>;
+        };
     };
 
     behaviors {
