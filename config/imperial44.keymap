@@ -335,7 +335,7 @@
 
         gaming-main {
             bindings = <
-&kp ESC  &kp T      &kp Q  &kp W  &kp E  &kp R                       &trans        &trans          &kp UP          &trans           &trans        &to 0
+&kp ESC  &kp TAB    &kp Q  &kp W  &kp E  &kp R                       &trans        &trans          &kp UP          &trans           &trans        &to 0
 &kp TAB  &kp LSHFT  &kp A  &kp S  &kp D  &kp F                       &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &kp RIGHT_SHIFT
 &kp I    &kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B        &trans  &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9     &kp NUMBER_0  &kp LCTRL
                                   &kp G  &mo 8  &kp SPACE    &trans  &trans        &trans
