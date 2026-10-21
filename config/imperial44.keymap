@@ -17,8 +17,8 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <600>;
-    acceleration-exponent = <2>;
+    time-to-max-speed-ms = <800>;
+    acceleration-exponent = <1>;
 };
 
 /* mouse-nav: держать RT2 = Precise (слой 10, ×⅓), RT3 = Turbo (слой 9, ×2) */
