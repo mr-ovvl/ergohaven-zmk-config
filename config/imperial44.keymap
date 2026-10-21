@@ -1,6 +1,6 @@
 #include "keys_ru.h"
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1800
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
 #define HYPER LS(LC(LA(LGUI)))
 
 #include <behaviors.dtsi>
@@ -17,8 +17,8 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <800>;
-    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <400>;
+    acceleration-exponent = <2>;
 };
 
 /* mouse-nav: держать RT2 = Precise (слой 10, ×⅓), RT3 = Turbo (слой 9, ×2) */
