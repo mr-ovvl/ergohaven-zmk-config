@@ -124,6 +124,7 @@
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <28 27>;
+            layers = <0>;
         };
 
         minus {
@@ -165,11 +166,13 @@
         caps-lock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <25 26>;
+            layers = <0>;
         };
 
         Underscore {
             bindings = <&kp UNDER>;
             key-positions = <30 31>;
+            layers = <0>;
         };
     };
 
