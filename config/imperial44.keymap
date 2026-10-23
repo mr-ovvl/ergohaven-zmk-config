@@ -294,7 +294,7 @@
             bindings = <
 &trans  &kp ESC           &kp TAB       &kp F11       &kp F10         &kp F9                                              &kp ESC             &kp TAB                    &kp K_UNDO             &kp DELETE    &kp BACKSPACE           &trans
 &trans  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_GUI  &sk LEFT_SHIFT  &kp F12                                             &kp LA(LEFT_ARROW)  &hmr RIGHT_GUI LEFT_ARROW  &hmr RIGHT_SHIFT DOWN  &hmr LALT UP  &hmr RCTRL RIGHT_ARROW  &kp LA(RIGHT_ARROW)
-&trans  &kp LG(Z)         &kp LG(X)     &kp LG(C)     &kp LG(V)       &kp LG(SPACE)  &kp LA(BACKSPACE)    &kp LA(DELETE)  &kp INSERT          &kp HOME                   &kp PG_DN              &kp PG_UP     &kp END                 &to 7
+&trans  &kp LG(Z)         &kp LG(X)     &kp LG(C)     &kp LG(V)       &kp LG(SPACE)  &kp LA(BACKSPACE)    &kp LA(DELETE)  &kp GLOBE           &kp HOME                   &kp PG_DN              &kp PG_UP     &kp END                 &to 7
                                                       &trans          &trans         &trans               &trans          &mo 3               &trans
             >;
 
