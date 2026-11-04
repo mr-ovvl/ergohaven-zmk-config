@@ -2,10 +2,16 @@ manifest:
   remotes:
     - name: ergohaven
       url-base: https://github.com/ergohaven
+    - name: srwi
+      url-base: https://github.com/srwi
   projects:
     - name: ergohaven-zmk
       remote: ergohaven
       revision: main
       import: config/west.yml
+    # live layer state for KeyPeek over Raw HID (raw HID module comes from ergohaven-zmk)
+    - name: zmk-keypeek-layer-notifier
+      remote: srwi
+      revision: 23a9e46287e083a66d1d6f1939f68efb1f0f5295
   self:
     path: config
